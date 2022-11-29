@@ -12,11 +12,11 @@ export function HomePage () {
           <img src={logo} alt='logo'/>
           <div className='header-menu'>
             <ul className='header-menu__ul'>
-              <li>О НАС</li>
-              <li>ГЛАВНАЯ</li>
-              <li>НОВОСТИ</li>
-              <li>МАГАЗИН</li>
-              <li>ЛИЧНЫЙ КАБИНЕТ</li>
+              <li><span>О НАС</span></li>
+              <li><span>ГЛАВНАЯ</span></li>
+              <li><span>НОВОСТИ</span></li>
+              <li><span>МАГАЗИН</span></li>
+              <li><span>ЛИЧНЫЙ КАБИНЕТ</span></li>
             </ul>
           </div>
         </div>

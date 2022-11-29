@@ -37,3 +37,10 @@
 .header-menu li:first-child {
   border: none;
 }
+.header-menu li span {
+  display: block;
+  transition: .3s;
+}
+.header-menu li:hover span {
+  transform: scale(1.1);
+}
