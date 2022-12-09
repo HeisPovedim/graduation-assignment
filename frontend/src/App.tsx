@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 
 import './App.scss';
-import { HomePage } from './pages/home/home';
+import { HomePage } from './pages/main/main';
 
 function App() {
   return (
