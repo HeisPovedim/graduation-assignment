@@ -1,5 +1,6 @@
 // #: REACT
 import React from 'react';
+import axios from 'axios';
 
 // #: IMG
 import logo from '../../img/logo.png';
@@ -11,6 +12,22 @@ import { News } from '../../components/News';
 import { news } from '../../data/news';
 
 export function HomePage () {
+  const [postNews, setPostNews] = React.useState([]);
+
+  React.useEffect(() => { // ?: получение всех постов из БД
+    const fecthAllPostNews = async () => {
+      try {
+        const res = await axios.get('http://localhost:5000/news');
+        setPostNews(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fecthAllPostNews();
+  }, []);
+
+  console.log(postNews[0]);
+
   return (
     <>
       <header>
@@ -26,7 +43,7 @@ export function HomePage () {
         </div>
       </header>
       <div className="main_content">
-        <News news={news[0]} />
+        <News news={news[0]} post={postNews[0]} />
       </div>
     </>
   );
