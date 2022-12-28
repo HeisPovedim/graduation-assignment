@@ -6,6 +6,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
+app.use(express.static('public'));
 
 
 // ?: Konfiguration
@@ -17,6 +18,7 @@ const conn = mysql.createConnection({ // присоединение к БД
   password: '',
   database: 'school',
 })
+
 conn.connect( error => { // проверка на успешное присоединение к БД
   if (error) {
     console.log(error);

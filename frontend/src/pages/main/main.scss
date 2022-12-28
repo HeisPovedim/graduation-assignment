@@ -57,11 +57,12 @@ header {
  ****************************/
 .main_content {
   padding: 0px 25px 0px 25px;
-  justify-content: center;
+  // justify-content: center;
+  flex-direction: column;
 }
 .main_content_news {
   flex-direction: column;
-  height: 100px;
+  padding-bottom: 25px;
 }
 .main_content_news h1 {
   justify-content: center;

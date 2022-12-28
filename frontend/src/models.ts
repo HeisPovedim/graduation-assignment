@@ -4,3 +4,11 @@ export interface INews {
   title: string,
   text: string,
 }
+
+export interface IPostNews {
+  id: number,
+  title: string,
+  text: string,
+  date: any,
+  img: string,
+}
