@@ -1,2 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('./pages/main/main.scss');
+
+// Page: Новости
+@import url('./pages/news/news.scss');
+
+// Page: Личный Кабинет
+@import url('./pages/personal_account/personal_account.scss');
+
+/********************
+ * КОМПОНЕНТ HEADER *
+ ********************/
+// DISPLAY: FLEX
+header,
+.main_content,
+.content_news,
+.content_news h1,
+.content_news_base {
+  display: flex;
+}
+// Шапка
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #45616F;
+
+  align-items: center;
+  justify-content: center;
+}
+// Меню шапки
+.header-menu {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  color: white;
+}
+.header-menu ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.header-menu li {
+  float: left;
+  display: inline;
+  border-left: 1px solid #eee;
+  padding: 0px 25px 0px 25px;
+}
+.header-menu li:first-child {
+  border: none;
+}
+.header-menu li span {
+  display: block;
+  transition: .3s;
+}
+.header-menu li:hover span {
+  transform: scale(1.1);
+}
+.header-menu a {
+  text-decoration: none;
+  color: white;
+}

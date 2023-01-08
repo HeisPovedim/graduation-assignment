@@ -1,0 +1,33 @@
+/********
+ * NEWS *
+ ********/
+.content_news {
+  padding: 0px 25px 0px 25px;
+  flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+.content_news h1 {
+  justify-content: center;
+}
+.content_news_base {
+  align-items: flex-start;
+}
+.content_news span {
+  word-wrap: break-word;
+  text-align: justify;
+  padding-left: 30px;
+}
+.content_news_base__img {
+  width: 500px;
+  height: 400px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 6px 6px #ddd3c7, 12px 12px #816a58;
+}
+.content_news_base__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
