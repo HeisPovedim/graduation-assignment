@@ -1,0 +1,1 @@
+geth.exe --http --http.addr "127.0.0.1" --http.api "eth, miner, net, web3, admin, personal, contract" --networkid 15 --datadir "./" --allow-insecure-unlock --http.corsdomain "*" console
